@@ -56,6 +56,11 @@ dependencies {
     // предоставляет компоненты для отображения предпросмотра камеры.
     implementation(libs.androidx.camera.view.v140)
 
+    // для тестов
+    testImplementation(libs.junit)
+    androidTestImplementation(libs.androidx.junit)
+    androidTestImplementation(libs.androidx.espresso.core)
+
     // Для корректной работы с компонентами Android (Activity)
     implementation(libs.androidx.activity)
 

@@ -50,7 +50,9 @@ class GalleryActivity : AppCompatActivity() {
             }
         )
         // Устанавливаем адаптер для представления
+        // Адаптер отвечает за связывание данных (списка файлов) с элементами интерфейса (ячейками RecyclerView)
         galleryBinding.gallery.adapter = adapter
+        // отображаем элементы списка в линейном порядке (вертикально или горизонтально), по дефолту - вертикально
         galleryBinding.gallery.layoutManager = LinearLayoutManager(this)
     }
 

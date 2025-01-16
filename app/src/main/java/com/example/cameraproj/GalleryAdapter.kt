@@ -11,6 +11,7 @@ import com.example.cameraproj.databinding.ListItemImageBinding
 import java.io.File
 
 // Адаптер автоматизирует процесс создания ImageView, загрузки в него изображения и управление прокруткой списка и запуском просмотра видео
+//Адаптер отвечает за связывание данных (списка файлов) с элементами интерфейса (ячейками RecyclerView)
 class GalleryAdapter(private val fileArray: Array<File>, private val onFileClick: (File) -> Unit, private val onDeleteClick: (File) -> Unit) : RecyclerView.Adapter<GalleryAdapter.ViewHolder>() {
     // Этот класс хранит ссылки на элементы интерфейса, чтобы не приходилось каждый раз искать их при прокрутке списка
     // получаем доступ к элементам макета list_item_image.xml
